@@ -1,0 +1,474 @@
+.modal {
+    padding-right: 0 !important;
+}
+
+.modal-body {
+    position: relative;
+}
+
+#close-btn button {
+    position: absolute;
+    right: 10;
+    top: 10;
+    font-size: 0.75rem;
+}
+
+#closebtn button i {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+#closebtn button:hover {
+    background: #ffffff2f;
+}
+
+/* Search input styling */
+#searchbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 12px 15px;
+    font-size: 16px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchbox::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Focus effect for input */
+#searchbox:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.modal-dialog {
+    max-width: 100% !important;
+    margin: 0;
+}
+
+.modalbackground {
+    height: 100%;
+    background: #3b3b3b1e;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.search-btn:hover {
+    background: #ffffff2f;
+}
+
+.site-header {
+    position: relative;
+}
+
+/* Top Bar Styles */
+.contact-link {
+    text-decoration: none;
+    color: #1a202c;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    height: 20px;
+    width: auto;
+}
+
+/* Navigation Styles */
+.main-nav {
+    transition: all 0.3s ease;
+    background-color: #37517e;
+    padding: 10px;
+    position: relative;
+}
+
+.main-nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #37517e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: none;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+}
+
+.header-logo {
+    width: 100px;
+}
+
+.main-nav.sticky .nav-logo {
+    display: block;
+}
+
+/* Nav List and Links */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    font-size: 16px !important;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    display: none;
+}
+
+.nav-link .dropdown-icon {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: transparent;
+}
+
+.dropdown:hover::after {
+    bottom: -10px;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin-top: 0;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: grid !important;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Grid Dropdown Style */
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    padding: 20px;
+}
+
+.dropdown-section h4 {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dropdown-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-section li a {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+/* List Dropdown Style */
+.list-menu {
+    list-style: none;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.list-menu li a {
+    color: #333;
+    text-decoration: none;
+    line-height: 2;
+    display: block;
+    font-size: 13px;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.list-menu li a:hover {
+    background-color: #f3f4f6;
+    color: #008cff;
+    transform: translateX(5px);
+}
+
+/* Grid Menu Hover Effects */
+.grid-menu li a {
+    color: #333;
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: 13px;
+    padding: 6px 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.grid-menu li a:hover {
+    background-color: #f3f4f6;
+    color: #008cff;
+    padding-left: 15px;
+}
+
+.dropdown-section h4 a {
+    color: #1a202c;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 8px 10px;
+}
+
+.dropdown-section h4 a:hover {
+    background-color: #f3f4f6;
+    color: #008cff;
+    padding-left: 15px;
+}
+
+/* Dropdown Hover Gap Fix */
+.nav-list .dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+}
+
+.nav-list .dropdown-menu {
+    margin-top: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+    transform: translateY(0);
+}
+
+/* Container Width */
+.container {
+    max-width: 85%;
+    padding: 0 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grid-menu {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-contact-info {
+        display: none !important;
+    }
+
+    .top-bar .container .header-logo img {
+        text-align: left !important;
+        height: 80px;
+        width: auto;
+    }
+
+    .main-nav {
+        padding: 0;
+    }
+}
+
+/* Adjust font sizes for specific nav items */
+.nav-list>li>.nav-link {
+    font-size: 16px !important;
+}
+
+/* Make DESTINATION and TREKKING IN NEPAL larger */
+.nav-list>li:nth-child(1)>.nav-link,
+.nav-list>li:nth-child(2)>.nav-link {
+    font-size: 16px !important;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    background: #37517e;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#mobile-search {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    #mobile-search {
+        width: 90%;
+        padding: 10px;
+        display: block;
+    }
+
+    .sub-nav-link {
+        color: white !important;
+    }
+
+    .main-nav {
+        padding: 0px;
+    }
+
+    .main-nav .container {
+        padding: 0 15px !important;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 280px;
+        height: 100vh;
+        background: #37517e;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 60px 0 0;
+        transition: 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list>li {
+        width: 100%;
+    }
+
+    .nav-link {
+        padding: 12px 20px;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Dropdown adjustments */
+    .dropdown-menu {
+        position: static !important;
+        width: 100% !important;
+        box-shadow: none;
+        background: rgba(0, 0, 0, 0.1);
+        padding: 0;
+        display: none;
+    }
+
+    .grid-menu {
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        padding: 10px;
+    }
+
+    .list-menu {
+        width: 100%;
+    }
+
+    .dropdown-section {
+        margin-bottom: 15px;
+    }
+
+    /* Top bar adjustments */
+    .top-bar .container {
+        gap: 10px;
+        text-align: center;
+    }
+
+    .contact-link {
+        justify-content: center;
+    }
+}
+
+/* Animation for mobile menu */
+@keyframes slideIn {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}

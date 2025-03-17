@@ -1,0 +1,312 @@
+.page-nav-container a {
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-nav-container a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    transition: all 0.3s ease-out;
+    z-index: -1;
+}
+
+.page-nav-container a:hover {
+    /* color: #000 !important; */
+    transition: all 0.3s ease-out;
+}
+
+.page-nav-container a:hover::before {
+    left: 0;
+}
+
+.page-nav-active {
+    position: relative;
+    color: #000 !important;
+    background-color: #fff !important;
+}
+
+
+
+.view-all-btn {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+.mobile-view-all-btn {
+    display: none;
+}
+
+.view-all-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #cb9331;
+    transition: all 0.3s ease-out;
+    z-index: -1;
+}
+
+.view-all-btn:hover {
+    color: #fff !important;
+    transition: all 0.3s ease-out;
+}
+
+.view-all-btn:hover::before {
+    left: 0;
+}
+
+.font-weight-medium {
+    font-weight: 600;
+}
+
+#cost-dates-mobile {
+    display: none;
+}
+
+.itineray-btn span {
+    font-size: 1rem !important;
+}
+
+.float-book-now-btn {
+    display: none;
+}
+
+.affiliation-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    margin: 8px 15px;
+}
+
+@media screen and (max-width:450px) {
+    .fact-container {
+        display: block !important;
+        padding: 0 1rem !important;
+    }
+}
+
+@media screen and (max-width:513px) {
+    .view-all-btn {
+        display: none;
+    }
+
+    .mobile-view-all-btn {
+        display: block;
+    }
+
+    .section-title {
+        font-size: 1.4rem !important;
+    }
+
+    .fact-item {
+        font-size: 0.8rem;
+        justify-content: start !important;
+    }
+
+    .fact-item i {
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    #cost-dates {
+        display: none;
+    }
+
+    #cost-dates-mobile {
+        display: block;
+    }
+
+    .other-packages {
+        padding: 0 !important;
+    }
+
+    .package-wrap {
+        margin-right: 0 !important;
+    }
+
+    .other-package-title {
+        font-size: 1.5rem !important;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .blog-container {
+        padding: 0 1rem;
+    }
+
+    .custom-breadcrumb {
+        display: none;
+    }
+
+    .itineray-btn {
+        text-align: left;
+    }
+
+    .itineray-btn div {
+        font-weight: 600 !important;
+    }
+
+    .itineray-btn div span {
+        font-weight: 600 !important;
+    }
+
+    .itineray-btn span {
+        border: none !important;
+    }
+
+    .fact-container {
+        justify-content: center !important;
+    }
+
+    .booking-module {
+        display: none;
+    }
+
+    .float-book-now-btn {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 1000;
+        display: block;
+        color: #fff;
+        text-align: center;
+    }
+
+    .package-book-btn {
+        background-color: #37517E;
+        color: white;
+        border: none;
+        border-radius: 0;
+        width: 100%;
+        display: block;
+        padding: 0.5rem;
+    }
+}
+
+
+
+/*
+.container
+{
+    width: 80% !important;
+} */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #101F46;
+}
+
+.nav-link {
+    height: auto !important;
+}
+
+/* General Styling */
+.search-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+/* Placeholder Styling */
+.search-input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Focus Effect */
+.search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.trip-advisor-card {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dcdbdb;
+}
+
+.trip-advisor-slogan span a {
+    color: black;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    padding: 0 3px;
+}
+
+.trip-advisor-title {
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.ta-rating-circle i {
+    color: rgb(4, 159, 4);
+}
+
+.ta-rating-section {
+    font-size: 0.85rem;
+}
+
+.ta-cert-link a {
+    color: white;
+    padding:3px 7px ;
+    background-color: rgb(4, 159, 4);
+    border: 0px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin: auto;
+}
+
+.ta-cr-review{
+    display: flex;
+    justify-content: center;
+}
+.ta-cr-review a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+    padding: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}
